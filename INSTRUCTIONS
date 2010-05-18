@@ -1,0 +1,32 @@
+This directory contains the source code for the Xeros operating system
+which is a desicated version of the Xinu OS[1].
+
+To compile Xeros, 
+
+1. Go into the compile directory
+2. make
+
+To create a boot image,
+
+1. Go into the boot directory
+2. make
+
+Good luck!
+
+
+[1] D. Comer et al.  "The Xinu Approach"
+
+
+To run Xeros under bochs run the following command from this directory once 
+everything is compiled.
+
+bochs "floppya: 1_44=boot/zImage"
+
+Once bochs is running, choose option 6 to start the simulation to
+execute Xeros.
+
+(Acutally, given the way the bochsrc file is setup all you need to do
+is run bochs and type 6 from this directory. The file is configured so
+that the default image to boot from is set to 
+"floppya: 1_44=boot/zImage"
+

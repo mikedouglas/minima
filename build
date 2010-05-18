@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd compile
+make
+cd ../boot
+make
+cd ..

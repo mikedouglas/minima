@@ -1,0 +1,19 @@
+# You may need to change the paths
+romimage: file=/usr/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/share/bochs/VGABIOS-elpin-2.40
+
+megs: 4
+floppya: 1_44=boot/zImage, status=inserted
+boot: a
+log: bochsout.txt
+panic: action=fatal
+error: action=report
+info: action=report
+debug: action=ignore
+vga_update_interval: 300000
+keyboard_serial_delay: 250
+#floppy_command_delay: 500
+#ips: 1000000
+mouse: enabled=0
+private_colormap: enabled=0
+i440fxsupport: enabled=0

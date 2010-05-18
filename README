@@ -1,0 +1,13 @@
+Minima
+
+Features
+========
+* preemptive multitasking
+* synchronous message passing
+* device infrastructure (w/ kbd implementation)
+* unix-style signals, syscalls
+* basic memory management
+
+This project uses the boot code from the Xeros OS, as well as the
+libc implementation from Xinu. Accordingly, it is released under
+the GPL2 license.
